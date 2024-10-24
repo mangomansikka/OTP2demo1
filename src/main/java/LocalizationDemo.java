@@ -10,6 +10,8 @@ public class LocalizationDemo {
         System.out.println("1. English");
         System.out.println("2. French");
         System.out.println("3. Spanish");
+        System.out.println("4. Persian");
+        System.out.println("5. Japanese");
 
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -18,7 +20,7 @@ public class LocalizationDemo {
         Locale locale;
         switch (choice) {
             case 1:
-                locale = new Locale("en", "US");
+                locale = new Locale("en", "UK");
                 break;
             case 2:
                 locale = new Locale("fr", "FR");
@@ -26,9 +28,15 @@ public class LocalizationDemo {
             case 3:
                 locale = new Locale("es", "ES");
                 break;
+            case 4:
+                locale = new Locale("fa", "IR");
+                break;
+            case 5:
+                locale = new Locale("ja", "JP");
+                break;
             default:
                 System.out.println("Invalid choice. Defaulting to English.");
-                locale = new Locale("en", "US");
+                locale = new Locale("en", "UK");
                 break;
         }
 
